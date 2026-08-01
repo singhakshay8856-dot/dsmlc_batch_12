@@ -9,5 +9,3 @@ git branch <branch name>
 git checkout <branch name>
 git branch
 git branch -d <branch name>git 
-hyyyyhdhd
-mnop
