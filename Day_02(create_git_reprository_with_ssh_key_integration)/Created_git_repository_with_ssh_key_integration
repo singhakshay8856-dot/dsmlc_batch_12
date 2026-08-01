@@ -1,0 +1,27 @@
+open folder that you have made by using power shell in new window of vs code 
+folder name is dsml_12
+git add .
+git status
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/singhakshay8856-dot/dsmlc_batch_12.git
+then confirm by using gmail code 
+
+To create SSH key
+git config --global user.name
+git config --global user.email
+git config --global user.email "singhakshay8856@gmail.com"
+git config --global user.name "singhakshay8568"
+git --version
+git config --global --list
+git init
+/Users/PREDATOR/OneDrive/Desktop/dsml_12/.git/
+Get-ChildItem $HOME\.ssh
+ssh-keygen -t ed25519 -C "singhakshay8856@gmail.com"
+git brach
+git checkout-b feat/update_readme
+ssh-add $HOME\.ssh\id_ed25519
+ssh -T git@github.com
+cat C:\Users\PREDATOR\.ssh\id_ed25519.pub
+git status
+git push -u origin main
