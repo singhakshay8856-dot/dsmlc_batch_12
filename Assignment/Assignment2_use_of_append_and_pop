@@ -1,0 +1,19 @@
+#Assignment of list :append() and pop()
+
+**Assignment**
+
+Qno1. create a list of 5 favourite fruits using append() and print the updated list.
+
+Qno2. create a list of numbers from 1 to 5. Remove the last item using pop() and print the final list.
+
+#Qno1. 
+List = ["apple","mango","banana","grapes","guava"]
+List.append("kiwi")
+List
+# ["apple","mango","banana","grapes","guava","kiwi"]
+
+#Qno2.
+List1 = [1,2,3,4,5]
+List1.pop()
+List1
+#[1,2,3,4]
