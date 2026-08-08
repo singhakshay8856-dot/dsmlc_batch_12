@@ -1,0 +1,238 @@
+#python lis
+
+lst = ["akshay",3,4,[5,6,7]]
+type(lst)
+
+len(lst)
+
+Class task of slicing.
+
+my_lst = [10,20,30,40,50,60]
+
+Qno1. result should be [20,30,40]
+
+Qno2. result should be [10,20,30]
+
+Qno3. result should be [40,50,60]
+
+Qno4. result should be [10,30,50]
+
+Qno5. result should be [60,50,40,30,20,10]
+
+Qno6. result should be [10,20,30,40,50,60]
+
+
+
+my_lst = [10,20,30,40,50,60]
+my_lst[1:4]
+
+my_lst = [10,20,30,40,50,60]
+my_lst[:3]
+
+my_lst = [10,20,30,40,50,60]
+my_lst[3:]
+
+my_lst = [10,20,30,40,50,60]
+my_lst[0:60:2]
+
+my_lst = [10,20,30,40,50,60]
+my_lst[::-1]
+
+my_lst = [10,20,30,40,50,60]
+my_lst[::]
+
+my_lst = [10,20,30,40,50,60]
+my_lst[:] #shallow copy
+#shallow copy vs deep copy
+
+#list operations
+#append()
+my_lst = [10,20,30,40,50,60]
+my_lst.append(70)
+my_lst
+
+#extend()
+my_lst = [10,20,30,40,50,60]
+lst2 = ["name","dob","gender","age"]
+my_lst.extend(lst2)
+my_lst
+
+my_lst
+
+#index()
+my_lst = [10,20,30,40,50,60]
+my_lst.insert(2,70)
+my_lst
+
+my_lst.index(70)
+
+#remove()
+my_lst = [10,20,30,40,50,60]
+my_lst.remove(30)
+my_lst
+
+my_lst
+
+#pop()
+my_lst = [10,20,30,40,50,60]
+my_lst.pop(2)
+my_lst
+
+#clear()
+my_lst.clear()
+my_lst
+
+#count()
+my_lst = [10,20,30,40,50,60,70,20,30,20,40]
+my_lst.count(20)
+
+#sort()
+my_lst = [10,20,30,40,50,60,70,20,30,20,40]
+my_lst.sort()
+my_lst
+
+#reverse()
+my_lst = [10,20,30,40,50,60,70,20,30,20,40]
+my_lst.reverse()
+my_lst
+
+#copy()
+my_lst = [10,20,30,40,50,60,70,20,30,20,40]
+my_lst2 = my_lst.copy()
+my_lst2
+
+my_lst2
+
+**shallow copy**
+
+lst = [1,2,3,4,[5,6,7]]
+lst1 = lst.copy()
+print(lst)
+print(lst1)
+
+lst1 = lst.copy()
+lst1
+
+lst2 = [[1,2,3],[4,5,6]]
+lst3 = lst2.copy()
+lst3
+
+lst3[1][1]=100
+print("original")
+print(lst2)
+print("copy")
+print(lst3)
+
+**DEEP COPY**
+
+import copy
+lst5 = [[1,2,3,4],[5,6,7]]
+lst6 = copy.deepcopy(lst5)
+lst5[1][2]= 100 #[1][2] represent the value will be replaced at 1st row and 2nd column
+
+print("original")
+print(lst5)
+print("copy")
+print(lst6)
+
+**using list as stack**
+
+data_new = [1,2,3,4,5]
+data_new.append(6)
+data_new
+
+
+data_new.append(7)
+data_new
+
+data_new.pop()
+
+data_new
+
+data_detail = []
+data_detail.append("A")
+data_detail
+
+data_detail.append("k")
+data_detail
+
+data_detail.append("s")
+data_detail
+
+data_detail.append("h")
+data_detail
+
+data_detail.append("A")
+data_detail
+
+data_detail.append("y")
+data_detail
+
+data_detail.pop()
+data_detail
+
+data_detail.pop()
+data_detail
+
+data_detail.pop()
+data_detail
+
+data_detail.pop()
+data_detail
+
+data_detail.pop()
+data_detail
+
+data_detail.pop()
+data_detail
+
+data = []
+data
+
+a = input("enter a name")
+data.append(a)
+data
+
+b = input("enter a address")
+data.append(b)
+data
+
+data.pop()
+data
+
+data.pop()
+data
+
+from collections import deque
+
+queue = deque(["Eric", "John", "Michael"])
+print(queue)
+
+queue.append("terry")
+queue.append("graham")
+queue
+
+queue.popleft()
+queue
+
+queue.popleft()
+queue
+
+queue.popleft()
+queue
+
+queue.popleft()
+queue
+
+queue.popleft()
+queue
+
+from collections import deque
+
+queue = deque(["Eric", "John", "Michael"])
+queue.append("terry")
+queue.append("graham")
+queue.popleft()
+queue.popleft()
+queue
+
