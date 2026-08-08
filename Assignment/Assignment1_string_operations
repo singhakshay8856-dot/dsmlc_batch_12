@@ -1,0 +1,165 @@
+#string operations
+text1 = "KATHMANDU"
+text1.lower()
+#kathmandu
+
+#upper()
+text2 = "janakpur"
+text2.upper()
+#JANAKPUR
+
+#capatalize()
+text3 = "dhangadi"
+text3.capitalize()
+#Dhangadi
+
+#title()
+text4 = "hello mirchaiya"
+text4.title()
+Hello Mirchaiya
+
+#strip()
+text5 = "       hello,i am a good learner       "
+text5.strip()
+#hello,i am a good learner
+
+#lstrip()
+text6 = "        hello,i am a good learner"
+text6.lstrip()
+#hello,i am a good learner
+
+#rstrip()
+text7 = "hello, i am a good learner        "
+text7.rstrip()
+#hello, i am a good learner
+
+#replace()
+text8 = "hello, i am a good learner"
+text8.replace("learner","student")
+hello, i am a good student
+
+#split()
+text9 = "it is a good example"
+text9.split("a")
+#['it is ', ' good ex', 'mple']
+
+text10 = "example"
+print(list(text10))
+#['e', 'x', 'a', 'm', 'p', 'l', 'e']
+
+#join()
+text11 = ("e" , "x" , "a" , "m" , "p" , "l" , "e")
+print("".join(text11))
+#example
+
+#find()
+text12 = "hello,my name is akshay singh"
+text12.find("my")
+#6
+
+#index()
+text13 = "hello,my name is akshay singh"
+text13.index("name")
+#9
+
+#find()
+text12 = "hello,my name is akshay singh"
+text12.find("akshy")
+#-1
+
+#index()
+text13 = "hello,my name is akshay singh"
+text13.index("akshy")
+# ---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+/tmp/ipykernel_1021/418571203.py in <cell line: 0>()
+      1 #index()
+      2 text13 = "hello,my name is akshay singh"
+----> 3 text13.index("akshy")
+
+ValueError: substring not found
+
+#count()
+text14 = "there are 7 provinces in our country"
+text14.count("r")
+#5
+
+#startswitch()
+text15 = "there are 7 provinces in our country"
+text15.startswith("country")
+#False
+
+#startswitch()
+text15 = "there are 7 provinces in our country"
+text15.startswith("there")
+#True
+
+#endswitch()
+text16 = "there are 7 provinces in our country"
+text16.endswith("there")
+#False
+
+#endswitch()
+text16 = "there are 7 provinces in our country"
+text16.endswith("country")
+#True
+
+#isalnum()
+text17 = "thereare7provincesinourcountry"
+text17.isalnum()
+#True
+
+#isalnum()
+text17 = "there are 7 provinces in our country"
+text17.isalnum()
+#False
+
+#isalpha()
+text18 = "thereareprovincesinourcountry"
+text18.isalpha()
+#True
+
+#isalpha()
+text18 = "thereare7provincesinourcountry"
+text18.isalpha()
+#False
+
+#isdigit()
+text19 = "723456"
+text19.isdigit()
+#True
+
+#isdigit()
+text19 = "7a23456"
+text19.isdigit()
+#False
+
+#isspace()
+text20 = "there are 7 provinces in our country"
+text20.isspace()
+#False
+
+#isspace()
+text20 = "    "
+text20.isspace()
+#True
+
+#islower()
+text21 = "there are 7 provinces in our country"
+text21.islower()
+#True
+
+#islower()
+text21 = "there Are 7 provinces in our country"
+text21.islower()
+#False
+
+#isupper()
+text22 = "THERE ARE 7 PROVINCES IN OUR COUNTRY"
+text22.isupper()
+#True
+
+#isupper()
+text22 = "THERE ARE 7 pROVINCES IN OUR COUNTRY"
+text22.isupper()
+#False
