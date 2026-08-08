@@ -209,29 +209,22 @@ queue = deque(["Eric", "John", "Michael"])
 print(queue)
 
 queue.append("terry")
-
 queue.append("graham")
-
 queue
 
 queue.popleft()
-
 queue
 
 queue.popleft()
-
 queue
 
 queue.popleft()
-
 queue
 
 queue.popleft()
-
 queue
 
 queue.popleft()
-
 queue
 
 from collections import deque
